@@ -9,8 +9,8 @@ export const ServiceDet = () => {
   return (
     <>
     <h1>{serviceSelected[0].name}</h1>
-    <h1>{serviceSelected[0].price}</h1>
-    <h1>{serviceSelected[0].description}</h1>
+    <h2>{serviceSelected[0].price}</h2>
+    <h3>{serviceSelected[0].description}</h3>
     </>
   )
 }

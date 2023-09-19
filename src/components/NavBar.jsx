@@ -15,6 +15,7 @@ export const NavBar = () => {
             <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
             <Nav.Link as={Link} to='/services'>Servicios</Nav.Link>
             <Nav.Link as={Link} to='/bookings'>Reservas</Nav.Link>
+            <Nav.Link as={Link} to='/contact'>Contacto</Nav.Link>
             <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
           </Nav>
         </Container>
