@@ -1,8 +1,14 @@
 import React from 'react'
-import { Prueba } from '../components/Prueba'
+import { Jumbotron } from '../components/Jumbotron'
+import { ServicesComp } from '../components/ServicesComp'
+import { Acordion } from '../components/Acordion'
 
 export const Home = () => {
   return (
-    <Prueba />
+    <>
+    <Jumbotron />
+    <ServicesComp />
+    <Acordion />
+    </>
   )
 }
