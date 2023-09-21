@@ -11,7 +11,7 @@ export const NavBar = () => {
         <img src={images.logo} height={80} />
         <Container>
           <Navbar.Brand as={Link} to='/'>Kinesiología OMT</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
             <Nav.Link as={Link} to='/services'>Servicios</Nav.Link>
             <Nav.Link as={Link} to='/bookings'>Reservas</Nav.Link>
