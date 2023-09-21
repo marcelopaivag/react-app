@@ -12,13 +12,13 @@ export const NavBar = () => {
           src={images.logo}
           height={80} />
         <Container>
-          <Navbar.Brand as={Link} to='/'>Kinesiología OMT</Navbar.Brand>
+          <Navbar.Brand as={Link} to='/react-app/'>Kinesiología OMT</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to='/'>Inicio</Nav.Link>
-            <Nav.Link as={Link} to='/services'>Servicios</Nav.Link>
-            <Nav.Link as={Link} to='/bookings'>Reservas</Nav.Link>
-            <Nav.Link as={Link} to='/contact'>Contacto</Nav.Link>
-            <Nav.Link as={Link} to='/blog'>Blog</Nav.Link>
+            <Nav.Link as={Link} to='/react-app/'>Inicio</Nav.Link>
+            <Nav.Link as={Link} to='/react-app/services'>Servicios</Nav.Link>
+            <Nav.Link as={Link} to='/react-app/bookings'>Reservas</Nav.Link>
+            <Nav.Link as={Link} to='/react-app/contact'>Contacto</Nav.Link>
+            <Nav.Link as={Link} to='/react-app/blog'>Blog</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

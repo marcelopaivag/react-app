@@ -18,7 +18,7 @@ export const ServicesComp = () => {
                                     <Card.Body>
                                         <Card.Title>{service.name}</Card.Title>
                                         <Card.Text>{service.description}</Card.Text>
-                                        <Link to={`/services/${service.sku}`}>
+                                        <Link to={`/react-app/services/${service.sku}`}>
                                             <Button variant="primary">Más detalles</Button>
                                         </Link>
                                     </Card.Body>
