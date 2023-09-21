@@ -8,7 +8,9 @@ export const NavBar = () => {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
-        <img src={images.logo} height={80} />
+        <img
+          src={images.logo}
+          height={80} />
         <Container>
           <Navbar.Brand as={Link} to='/'>Kinesiología OMT</Navbar.Brand>
           <Nav className="ms-auto">

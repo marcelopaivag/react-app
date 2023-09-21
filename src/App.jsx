@@ -7,6 +7,7 @@ import { Blog } from "./pages/Blog"
 import { ServiceDet } from "./pages/ServiceDet"
 import { Footer } from "./components/Footer"
 import { Contact } from "./pages/Contact"
+import '../src/App.css'
 
 function App() {
 

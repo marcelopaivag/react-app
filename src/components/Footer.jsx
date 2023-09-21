@@ -8,7 +8,9 @@ export const Footer = () => {
             <Container fluid className='bg-dark text-light'>
                 <Row>
                     <Col>
-                        <img src={images.logo} width={350} />
+                        <img 
+                        src={images.logo} 
+                        width={350} />
                     </Col>
                     <Col>
                         <h5>Recupérate con nosotros</h5>
