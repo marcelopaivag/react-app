@@ -1,4 +1,3 @@
-import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import images from '../assets/images';
 
@@ -12,9 +11,9 @@ export const Jumbotron = () => {
                     alt="First slide"
                     height={600}
                 />
-                <Carousel.Caption>
-                    <h5>Kinesiología</h5>
-                    <p>Para aliviar el dolor, optimizar la recuperación y mejorar el rendimiento.</p>
+                <Carousel.Caption className='badge bg-dark text-wrap'>
+                    <h2>Kinesiología</h2>
+                    <h6>Para aliviar el dolor, optimizar la recuperación y mejorar el rendimiento.</h6>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -24,9 +23,9 @@ export const Jumbotron = () => {
                     alt="Second slide"
                     height={600}
                 />
-                <Carousel.Caption>
-                    <h5>Fisioterapia</h5>
-                    <p>Tecnología de punta al servicio de tu recuperación.</p>
+                <Carousel.Caption className='badge bg-dark text-wrap'>
+                    <h2>Fisioterapia</h2>
+                    <h6>Tecnología de punta al servicio de tu recuperación.</h6>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -36,10 +35,11 @@ export const Jumbotron = () => {
                     alt="Third slide"
                     height={600}
                 />
-                <Carousel.Caption>
-                    <h5>Osteopatía</h5>
-                    <p>El cuerpo dispone de todos los mecanismos para la curación, sólo hay que ayudarle a restablecer la función normal.</p>
+                <Carousel.Caption className='badge bg-dark text-wrap'>
+                    <h2>Osteopatía</h2>
+                    <h6>El cuerpo dispone de todos los mecanismos para la curación, sólo hay que ayudarle a restablecer la función normal.</h6>
                 </Carousel.Caption>
             </Carousel.Item>
-        </Carousel>)
+        </Carousel>
+    )
 }
