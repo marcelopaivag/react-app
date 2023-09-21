@@ -5,9 +5,9 @@ import images from '../assets/images'
 export const Footer = () => {
     return (
         <>
-            <Container fluid className='bg-dark text-light'>
+            <Container fluid className='bg-dark text-light py-4'>
                 <Row>
-                    <Col>
+                    <Col className='ms-2'>
                         <img 
                         src={images.logo} 
                         width={350} />

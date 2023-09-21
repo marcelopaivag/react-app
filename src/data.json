@@ -4,19 +4,23 @@
             "name": "Kinesiología",
             "sku": "ABC123",
             "price": "$45.000",
-            "description": "Manejo de afecciones musculoesqueléticas, es decir, que afectan a músculos, huesos, articulaciones y nervios, basada en el razonamiento clínico y evidencia científica."
+            "description": "Manejo de afecciones musculoesqueléticas, es decir, que afectan a músculos, huesos, articulaciones y nervios, basada en el razonamiento clínico y evidencia científica.",
+            "image": "https://cdn.pixabay.com/photo/2022/05/10/08/58/doctor-7186468_1280.png"
         },
         {
             "name": "Osteopatía",
             "sku": "DEF456",
             "price": "$40.000",
-            "description": "El cuerpo dispone de todos los mecanismos necesarios para la autocuración, solo hay que ayudarle a restablecer la función normal."
+            "description": "El cuerpo dispone de todos los mecanismos necesarios para la autocuración, solo hay que ayudarle a restablecer la función normal.",
+            "image": "https://cdn.pixabay.com/photo/2016/08/10/17/18/activity-1583805_1280.jpg"
+
         },
         {
             "name": "Telerehabilitación",
             "sku": "GHI789",
             "price": "$30.000",
-            "description": "Rama de la telemedicina enfocada principalmente en la rehabilitación, con un enfoque biopsicosocial, de los usuarios y/o comunidades."
+            "description": "Rama de la telemedicina enfocada principalmente en la rehabilitación, con un enfoque biopsicosocial, de los usuarios y/o comunidades.",
+            "image": "https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825_1280.jpg"
         }
     ]
 }
