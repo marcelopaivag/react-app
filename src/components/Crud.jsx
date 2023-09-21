@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { db } from '../firebase'
 import { addDoc, collection, deleteDoc, doc, getDocs } from 'firebase/firestore'
 import Table from 'react-bootstrap/Table';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Row, } from 'react-bootstrap';
 
 
 export const Crud = () => {
@@ -36,10 +36,10 @@ export const Crud = () => {
 
   return (
     <>
-    <h1>Reserva tu cita</h1>
+      <h1>Reserva tu cita</h1>
       <Container>
-        <Row>
-          <Col>
+        <Row className='mb-3'>
+          <Col className='mb-2'>
             <input
               type='string'
               placeholder='Nombre'
@@ -54,7 +54,7 @@ export const Crud = () => {
             />
           </Col>
           <Col>
-          <input
+            <input
               type='string'
               placeholder='Teléfono'
               value={phone}
@@ -68,7 +68,7 @@ export const Crud = () => {
             />
           </Col>
           <Col>
-          <input
+            <input
               type='string'
               placeholder='Hora'
               value={time}
@@ -101,7 +101,7 @@ export const Crud = () => {
                 <td>{cites.date}</td>
                 <td>{cites.time}</td>
                 <td>
-                  <Button onClick={() => { deleteCite(cites.id) }} variant='danger'>Delete</Button>
+                  <Button onClick={() => { deleteCite(cites.id) }} variant='danger'>Borrar su reserva</Button>
                 </td>
               </tr>
             ))
