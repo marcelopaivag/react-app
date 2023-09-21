@@ -113,7 +113,6 @@ export const FormControl = () => {
                                     <td>{cites.date}</td>
                                     <td>{cites.time}</td>
                                     <td>
-                                        <Button variant='warning'>Edit</Button>
                                         <Button onClick={() => { deleteCite(cites.id) }} variant='danger'>Delete</Button>
                                     </td>
                                 </tr>
@@ -121,7 +120,6 @@ export const FormControl = () => {
                         }
                     </tbody>
                 </Table>
-
             </form>
 
 

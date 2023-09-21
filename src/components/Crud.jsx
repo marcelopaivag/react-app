@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { db } from '../firebase'
 import { addDoc, collection, deleteDoc, doc, getDocs } from 'firebase/firestore'
 import Table from 'react-bootstrap/Table';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 
 export const Crud = () => {
@@ -36,47 +36,59 @@ export const Crud = () => {
 
   return (
     <>
-      <input
-        type='string'
-        placeholder='Name'
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-      />
-      <input
-        type='string'
-        placeholder='Lastname'
-        value={lastname}
-        onChange={(event) => setLastname(event.target.value)}
-      />
-      <input
-        type='string'
-        placeholder='Phone'
-        value={phone}
-        onChange={(event) => setPhone(event.target.value)}
-      />
-      <input
-        type='string'
-        placeholder='Date'
-        value={date}
-        onChange={(event) => setDate(event.target.value)}
-      />
-      <input
-        type='string'
-        placeholder='Time'
-        value={time}
-        onChange={(event) => setTime(event.target.value)}
-      />
+    <h1>Reserva tu cita</h1>
+      <Container>
+        <Row>
+          <Col>
+            <input
+              type='string'
+              placeholder='Nombre'
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+            />
+            <input
+              type='string'
+              placeholder='Apellido'
+              value={lastname}
+              onChange={(event) => setLastname(event.target.value)}
+            />
+          </Col>
+          <Col>
+          <input
+              type='string'
+              placeholder='Teléfono'
+              value={phone}
+              onChange={(event) => setPhone(event.target.value)}
+            />
+            <input
+              type='string'
+              placeholder='Fecha'
+              value={date}
+              onChange={(event) => setDate(event.target.value)}
+            />
+          </Col>
+          <Col>
+          <input
+              type='string'
+              placeholder='Hora'
+              value={time}
+              onChange={(event) => setTime(event.target.value)}
+            />
 
-      <Button onClick={createCite} vatiant='success'>Agregar</Button>
+          </Col>
+          <Button onClick={createCite} vatiant='success'>Reservar hora</Button>
+
+        </Row>
+      </Container>
 
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Last Name</th>
-            <th>Phone</th>
-            <th>Date</th>
-            <th>Time</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Fecha</th>
+            <th>Hora</th>
           </tr>
         </thead>
         <tbody>
@@ -89,7 +101,6 @@ export const Crud = () => {
                 <td>{cites.date}</td>
                 <td>{cites.time}</td>
                 <td>
-                  <Button variant='warning'>Edit</Button>
                   <Button onClick={() => { deleteCite(cites.id) }} variant='danger'>Delete</Button>
                 </td>
               </tr>
