@@ -9,7 +9,7 @@ export const Jumbotron = () => {
                     className="d-block w-100"
                     src={images.fondo}
                     alt="First slide"
-                    height={600}
+                    height={800}
                 />
                 <Carousel.Caption className='badge bg-dark text-wrap'>
                     <h2>Kinesiología</h2>
@@ -21,7 +21,7 @@ export const Jumbotron = () => {
                     className="d-block w-100"
                     src={images.tr}
                     alt="Second slide"
-                    height={600}
+                    height={800}
                 />
                 <Carousel.Caption className='badge bg-dark text-wrap'>
                     <h2>Fisioterapia</h2>
@@ -33,7 +33,7 @@ export const Jumbotron = () => {
                     className="d-block w-100"
                     src={images.tr2}
                     alt="Third slide"
-                    height={600}
+                    height={800}
                 />
                 <Carousel.Caption className='badge bg-dark text-wrap'>
                     <h2>Osteopatía</h2>
