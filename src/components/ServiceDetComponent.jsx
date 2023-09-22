@@ -16,7 +16,7 @@ export const ServiceDetComponent = () => {
             <Card.Body>
                 <Card.Title>{serviceSelected[0].price}</Card.Title>
                 <Card.Text>{serviceSelected[0].description}</Card.Text>
-                <Button variant="primary" as={Link} to='/bookings'>Reserva tu hora</Button>
+                <Button variant="primary" as={Link} to='/react-app/bookings'>Reserva tu hora</Button>
             </Card.Body>
         </Card>
     )
