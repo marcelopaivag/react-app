@@ -11,7 +11,7 @@ export const ServicesComp = () => {
             {
                 data.services.map(service => (
                     <Container>
-                        <Row md={1} xl={1} className="g-4 d-flex">
+                        <Row md={1} xl={1} className="g-4" style={{ display: 'flex', flexWrap: 'wrap'}}>
                             <Col>
                                 <Card className="text-center" key={service.sku} style={{ width: 'auto' }}>
                                     <Card.Img variant="top" src={service.image} />
